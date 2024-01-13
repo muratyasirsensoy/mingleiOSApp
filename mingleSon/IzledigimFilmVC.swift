@@ -31,8 +31,8 @@ class IzledigimFilmVC: UIViewController, UIImagePickerControllerDelegate, UINavi
         
         
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "A") // Kendi resminin adını ekle
-        backgroundImage.contentMode = .scaleAspectFill // İstediğin ölçekte görüntülemek için uygun olanı seç
+        backgroundImage.image = UIImage(named: "kırmızı") // Kendi resminin adını ekle
+        //backgroundImage.contentMode = .scaleAspectFill // İstediğin ölçekte görüntülemek için uygun olanı seç
         self.view.insertSubview(backgroundImage, at: 0)
         
         imageView.isUserInteractionEnabled = true
@@ -54,7 +54,6 @@ class IzledigimFilmVC: UIViewController, UIImagePickerControllerDelegate, UINavi
                 starButton.frame = CGRect(x: starX , y: 615, width: starSize, height: starSize)
                 starButton.addTarget(self, action: #selector(starButtonTapped(_:)), for: .touchUpInside)
                 starX += starSize + spacing
-                
                 starButtons.append(starButton)
                 view.addSubview(starButton)
             }

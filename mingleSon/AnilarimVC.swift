@@ -26,8 +26,8 @@ class AnilarimVC: UIViewController, UIImagePickerControllerDelegate, UINavigatio
        
         
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "A") // Kendi resminin adını ekle
-        backgroundImage.contentMode = .scaleAspectFill // İstediğin ölçekte görüntülemek için uygun olanı seç
+        backgroundImage.image = UIImage(named: "mor") // Kendi resminin adını ekle
+        //backgroundImage.contentMode = .scaleAspectFill // İstediğin ölçekte görüntülemek için uygun olanı seç
         self.view.insertSubview(backgroundImage, at: 0)
         
         imageView.isUserInteractionEnabled = true

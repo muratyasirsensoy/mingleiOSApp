@@ -12,32 +12,33 @@ class UploadVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "A") // Kendi resminin adını ekle
-        backgroundImage.contentMode = .scaleAspectFill // İstediğin ölçekte görüntülemek için uygun olanı seç
+        backgroundImage.image = UIImage(named: "renkli") // Kendi resminin adını ekle
+        //backgroundImage.contentMode = .scaleAspectFill // İstediğin ölçekte görüntülemek için uygun olanı seç
         self.view.insertSubview(backgroundImage, at: 0)
         
-        let imageView5 = UIImageView(frame: CGRect(x: 36, y: 118, width: 130, height: 118)) // Örnek bir frame
+        let imageView5 = UIImageView(frame: CGRect(x: 62, y: 111, width: 110, height: 110)) // Örnek bir frame
         imageView5.image = UIImage(named: "anılarım") // Kendi resminin adını ekle
         imageView5.contentMode = .scaleAspectFill
         imageView5.clipsToBounds = true
         imageView5.layer.cornerRadius = imageView5.frame.size.width / 2 // Yuvarlaklığı belirle
         self.view.addSubview(imageView5)
             
-        let imageView1 = UIImageView(frame: CGRect(x: 36, y: 271, width: 130, height: 116)) // Örnek bir frame
+        let imageView1 = UIImageView(frame: CGRect(x: 62, y: 285, width: 110, height: 110)) // Örnek bir frame
         imageView1.image = UIImage(named: "gezdigimyerler") // Kendi resminin adını ekle
         imageView1.contentMode = .scaleAspectFill
         imageView1.clipsToBounds = true
         imageView1.layer.cornerRadius = imageView1.frame.size.width / 2 // Yuvarlaklığı belirle
+        imageView1.layer.cornerRadius = imageView1.frame.size.height / 2
         self.view.addSubview(imageView1)
         
-        let imageView2 = UIImageView(frame: CGRect(x: 36, y: 424, width: 130, height: 118)) // Örnek bir frame
+        let imageView2 = UIImageView(frame: CGRect(x: 62, y: 465, width: 110, height: 110)) // Örnek bir frame
         imageView2.image = UIImage(named: "okudugumkitaplar") // Kendi resminin adını ekle
         imageView2.contentMode = .scaleAspectFill
         imageView2.clipsToBounds = true
         imageView2.layer.cornerRadius = imageView2.frame.size.width / 2 // Yuvarlaklığı belirle
         self.view.addSubview(imageView2)
         
-        let imageView3 = UIImageView(frame: CGRect(x: 36, y: 581, width: 130, height: 118)) // Örnek bir frame
+        let imageView3 = UIImageView(frame: CGRect(x: 62, y: 640, width: 110, height: 110)) // Örnek bir frame
         imageView3.image = UIImage(named: "izledigimfilmler") // Kendi resminin adını ekle
         imageView3.contentMode = .scaleAspectFill
         imageView3.clipsToBounds = true

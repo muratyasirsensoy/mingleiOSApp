@@ -13,8 +13,8 @@ class GezdigimYerVC: UIViewController {
         super.viewDidLoad()
         
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
-        backgroundImage.image = UIImage(named: "A") // Kendi resminin adını ekle
-        backgroundImage.contentMode = .scaleAspectFill // İstediğin ölçekte görüntülemek için uygun olanı seç
+        backgroundImage.image = UIImage(named: "gyer") // Kendi resminin adını ekle
+        //backgroundImage.contentMode = .scaleAspectFill // İstediğin ölçekte görüntülemek için uygun olanı seç
         self.view.insertSubview(backgroundImage, at: 0)
         // Do any additional setup after loading the view.
     }
